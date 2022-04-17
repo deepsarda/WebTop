@@ -1,2 +1,2 @@
 # WebTop
-A desktop written to work completely in web!
+A desktop written to work completely on the web!
