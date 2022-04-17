@@ -1,0 +1,10 @@
+{
+    "version": "0.0.1",
+    "description": "WebTop is a desktop written to work completely on your browser. It is designed to be a simple, easy to use, and highly customizable desktop.",
+    "author": "LoneWolf#7676, Multiii#7676",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
