@@ -1,3 +1,11 @@
 <%- include('includes/head.ejs',{ title:"WebTop"}); %>
-500
+<div style="text-align: center; position: absolute; top: 50%; ">
+  <h1>500</h1>
+  <br />
+  <h3>An internal server error occurred.</h3>
+  <h3><%= error.message %></h3>
+
+  <br />
+  <a href="/">Go back to the home page</a>
+</div>
 <%- include("includes/footer") %>
