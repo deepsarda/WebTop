@@ -1,3 +1,13 @@
 <%- include('includes/head.ejs',{ title:"WebTop"}); %>
 
+<script>
+  $(document).ready(async function () {
+    let terminal = new Terminal();
+    await terminal.sendTitle("Hi there! Welcome to WebTop! ");
+    await terminal.sendLine("I am Aeona! I will be your personal assistant. While you use WebTop, I will be here to help and talk to you.");
+    await terminal.sendLine("So, what can I do for you today?");
+    await terminal.sendLine("To get started, type 'help' to see what I can do for you.");
+    await terminal.requestUserInput( );
+  });
+</script>
 <%- include("includes/footer") %>

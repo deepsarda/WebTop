@@ -5,6 +5,7 @@ module.exports=function(app,renderTemplate){
     let router = express.Router();
 
     router.get('/', function (req, res) {
+
         renderTemplate(res, req, 'index.ejs');
     });
 
