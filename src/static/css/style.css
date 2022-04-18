@@ -1,19 +1,28 @@
-:root{
-    --main-accent-color: #ffffff;
-    --secondary-accent-color: #967ab1;
+:root {
+  --main-accent-color: #ffffff;
+  --background-accent-color: rgb(58 65 116 / 25%);
+  --box-shadow-color: rgba(31, 38, 135, 0.37);
+  --border-color: rgba(255, 255, 255, 0.18);
 }
-body{
-    width: 100%;
-    height: 100%;
-    background-image: url("../svg/background.svg");
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../svg/background.svg");
+  color: var(--main-accent-color);
 }
 
-.background{
-    width:100vw;
-    height:100vh;
-    z-index: -1;
-    margin-left:auto; 
-    margin-right:auto; 
-    display:block;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.glass {
+    background: var(--background-accent-color);
+    box-shadow: 0 8px 32px 0 var(--box-shadow-color);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid var(--border-color);
 }
 
