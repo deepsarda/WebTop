@@ -8,38 +8,23 @@ async function wait(ms) {
 class Terminal {
   constructor() {
     this.terminal = $(".terminal");
-    console.log(cmds);
     this.cmds = cmds;
   }
 
   async sendLine(line) {
-    this.terminal.append(`<p class="output"> </p>`);
-    await this.animate(line);
-  }
-
-  async animate(text) {
-    let chars = text.split("");
-    //Loop through each character
-    for (let i = 0; i < chars.length; i++) {
-      //Wait for a bit
-      await wait(10);
-      //Add the character to the terminal
-      let output=$(".output").last();
-      output.html(output.html() + chars[i]);
-    }
+    this.terminal.append(`<p class="output">${line}</p>`);
+    await wait(1000);
   }
 
   async sendError(error, errorCode) {
-    // Wait 0.5 seconds
-    await wait(500);
+    await wait(1000);
     this.terminal.append(
       `<h1>${error} <span class="errorcode">${errorCode}</span></h1>`
     );
   }
 
   async sendTitle(title) {
-    // Wait 0.5 seconds
-    await wait(500);
+    await wait(1000);
     this.terminal.append(`<h1>${title}</h1>`);
   }
 
@@ -47,8 +32,7 @@ class Terminal {
     validInputCheck = this.validInputCheck,
     options = { name: "unkown", hostname: "mainframe" }
   ) {
-    // Wait 0.5 seconds
-    await wait(500);
+    await wait(1000);
     this.terminal.append(
       `<p class="output">${options.name}@${options.hostname}:~$ <input type="text" id="input" autofocus></p>`
     );

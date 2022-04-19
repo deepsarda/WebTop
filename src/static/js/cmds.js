@@ -16,7 +16,7 @@ let cmds = [
     description: "Send some  info about aeona and webtop",
     callback: async function (args, terminal) {
       return {
-        text: ' <a href="https://aeona.repl.co">Click here to learn more about me. </a> <a href="/">Click here to learn more about webtop. </a>',
+        text: ' <a href="https://aeona.repl.co">Click here to learn more about me. </a> <a href="/about">Click here to learn more about webtop. </a>',
         success: true,
       };
     },
